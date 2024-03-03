@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know About Phones</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="mb-5">
+            <span class="text-black p-3 text-xl mb-4">Search Phones:</span>
+            <label class="input input-bordered bg-white flex items-center gap-2 m-5">
+                <input id="searchText" type="text" class="grow bg-[#0D6EFD]" placeholder="Search" />
+                <button id="searchBtn" onclick="searchPhone()" class="btn btn-md text-white border-0 bg-[#0D6EFD]">Search Phones</button>
+              </label>
+        </div>
+        <div class="phone-layout grid grid-cols-3 gap-5" id="phone-layout">
+            <div class="card w-96 shadow-xl text-[#403F3F]">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title w-full justify-center font-bold">Shoes!</h2>
+                  <p class="text-center">If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title w-full justify-center font-bold">$999</h2>
+                  <div class="card-actions justify-center">
+                    <button class="btn btn-sm border-0 bg-[#0D6EFD] text-white">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
